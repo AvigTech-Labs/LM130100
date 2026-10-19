@@ -1,6 +1,6 @@
 # LM130100
 
-Cortadora láser LM130100 - Documentación
+Cortadora láser R130100 - Documentación
 
 
 Link de documentación:
