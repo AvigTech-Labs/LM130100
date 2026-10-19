@@ -1,4 +1,4 @@
-Máquina de láser 130100 - 100
+Máquina de láser R130100
 =============================
 
 1. Información general
@@ -73,7 +73,7 @@ Quedan fuera del uso previsto:
 * intervenir la fuente de alta tensión o el tubo láser por parte de estudiantes;
 * dejar un trabajo láser sin supervisión.
 
-2. Características del 130100
+2. Características del R130100
 -------------------------------
 
 •	Alta calidad de grabado y corte.
