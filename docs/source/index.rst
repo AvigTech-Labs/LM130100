@@ -3,11 +3,7 @@ Cortadora y grabadora láser R130100
 
 Bienvenido a la documentación oficial de la cortadora y grabadora láser R130100
 
-Esta documentación ha sido recopilada y desarollada por AvigTech.
-
-.. image:: _static/avigtech/logo.png
-   :alt: AvigtechLogo
-   :align: center
+Esta documentación ha sido recopilada y desarollada por Avig Tech.
 
 Contenido
 =========
@@ -17,6 +13,11 @@ Contenido
    :caption: Manual Técnico
 
    documentos/tema_0/0_introduccion
+   documentos/tema_0/01_descripcion_componentes
+   documentos/tema_0/02_seguridad
+   documentos/tema_0/04_operacion
+   documentos/tema_0/05_mantenimiento
+   
 
 .. toctree::
    :maxdepth: 2
@@ -38,6 +39,10 @@ Contenido
    documentos/tema_3/1_ejemplos
 
 
+.. image:: _static/avigtech/logo.png
+   :alt: AvigtechLogo
+   :align: left
+   :width: 20%
 
 
 

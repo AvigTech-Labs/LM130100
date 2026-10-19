@@ -1,5 +1,5 @@
-Instalación del equipo
-========================
+1. Instalación del equipo
+==========================
 
 La instalación inicial comprende el desembalaje, la colocación de las ruedas,
 los soportes inferiores y el conducto de extracción de humo.
@@ -26,8 +26,8 @@ Procedimiento
    Todas las operaciones de instalación deben realizarse con la alimentación
    eléctrica desconectada.
 
-Conexiones
-==========
+2. Conexiones
+==============
 
 Conexión de la bomba de aire y de la bomba de agua
 --------------------------------------------------
@@ -83,8 +83,8 @@ Conexión a una computadora
 Una vez completada la conexión, puede comprobarse el funcionamiento normal
 del equipo.
 
-Ajuste del enfoque
-==================
+3. Ajuste del enfoque
+======================
 
 .. figure:: _static/images/05_ajuste_enfoque_es.png
    :align: center
@@ -113,6 +113,7 @@ Procedimiento de enfoque
 #. Compruebe que la superficie del material queda situada en el plano focal.
 #. Ajuste la altura si fuera necesario y apriete nuevamente el tornillo de
    bloqueo.
+
 Mantenimiento del equipo
 ========================
 
@@ -184,21 +185,16 @@ grabado pierde profundidad, puede aumentarse moderadamente la corriente de
 salida. Si incluso con el valor máximo permitido no se alcanza la potencia
 necesaria, debe considerarse la sustitución del tubo láser.
 
-Solución de problemas
-=====================
+4. Solución de problemas
+=========================
 
-.. figure:: _static/images/07_solucion_problemas_es.png
-   :align: center
-   :width: 100%
-
-   Tabla de fallas comunes traducida al español.
-
-Resumen editable
-----------------
+Tabla de fallas comunes
+--------------------------
 
 .. list-table::
    :widths: 7 30 63
    :header-rows: 1
+   :class: fit-table
 
    * - N.º
      - Falla

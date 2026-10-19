@@ -4,7 +4,7 @@ Máquina de láser 130100 - 100
 1. Información general
 ------------------------
 
-.. image:: ./img/cortadora_co2.jpg
+.. image:: ./_static/images/cortadora_co2.jpg
 	:align: center
 	:width: 50%
 
@@ -73,7 +73,7 @@ Quedan fuera del uso previsto:
 * intervenir la fuente de alta tensión o el tubo láser por parte de estudiantes;
 * dejar un trabajo láser sin supervisión.
 
-2. Características del LM130100
+2. Características del 130100
 -------------------------------
 
 •	Alta calidad de grabado y corte.
@@ -332,6 +332,76 @@ Propósito de uso
 
 4. Sistemas Auxiliares
 ----------------------
+4.1 Bomba de agua XYH-075
+=========================
 
+.. list-table::
+   :widths: 45 55
+   :header-rows: 1
+
+   * - Parámetro
+     - Valor
+   * - Alimentación
+     - 220-240 V / 50 Hz
+   * - Potencia
+     - 75 W
+   * - Altura máxima de impulsión
+     - 3,2 m
+   * - Caudal
+     - 3200 L/h
+   * - Temperatura máxima del agua
+     - 35 °C
+   * - Clase de protección
+     - IPX8
+
+**Bomba de agua XYH-075.**
+
+
+4.2 Compresor de aire ACO-004
+=============================
+
+.. list-table::
+   :widths: 45 55
+   :header-rows: 1
+
+   * - Parámetro
+     - Valor
+   * - Alimentación
+     - 220 V / 50 Hz
+   * - Potencia
+     - 58 W
+   * - Presión
+     - 0,028 MPa
+   * - Caudal
+     - 75 L/min
+   * - Diámetro de la salida
+     - 8 mm
+
+**Compresor de aire ACO-004.**
+
+
+4.3 Ventilador extractor CZR-LY80
+=================================
+
+.. list-table::
+   :widths: 45 55
+   :header-rows: 1
+
+   * - Parámetro
+     - Valor
+   * - Alimentación
+     - 220 V / 50 Hz
+   * - Potencia
+     - 550 W
+   * - Velocidad
+     - 2800 rpm
+   * - Caudal
+     - 18 m³/min
+   * - Presión
+     - 1,7 kPa
+   * - Diámetro de la salida
+     - 80 mm
+
+**Ventilador extractor CZR-LY80.**
 
 
