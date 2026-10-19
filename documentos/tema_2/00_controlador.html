@@ -1,0 +1,1770 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RuiDa RDC6445G &mdash; documentación de Cortadora y grabadora Láser R130100 - 1.1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=23a32747" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=ed4e2bf4"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Seguridad y recomendaciones de uso" href="../tema_3/0_seguridad_uso.html" />
+    <link rel="prev" title="Instalación del equipo" href="../tema_1/0_puesta_en_marcha.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Cortadora y grabadora Láser R130100
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Manual Técnico</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_0/0_introduccion.html">Máquina de láser 130100 - 100</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Puesta en Marcha</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_1/0_puesta_en_marcha.html">Instalación del equipo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controlador Ruida</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RuiDa RDC6445G</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#declaracion-de-derechos-de-autor">Declaración de derechos de autor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#descripcion-general">1. Descripción general</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#presentacion">1.1 Presentación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#descripcion-del-modelo-del-controlador">1.2 Descripción del modelo del controlador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comparacion-de-prestaciones-de-controladores">1.3 Comparación de prestaciones de controladores</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#dimensiones-de-instalacion">2. Dimensiones de instalación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dimensiones-de-instalacion-de-la-placa-principal">2.1 Dimensiones de instalación de la placa principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dimensiones-del-panel">2.2 Dimensiones del panel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#imagenes-del-equipo-e-interfaces">3. Imágenes del equipo e interfaces</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#imagen-de-la-placa-principal">3.1 Imagen de la placa principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imagen-del-panel">3.2 Imagen del panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conexion-electrica">3.3 Conexión eléctrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indicadores-led">3.4 Indicadores LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#descripcion-de-las-senales-de-interfaz-de-la-placa-principal">4. Descripción de las señales de interfaz de la placa principal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-de-alimentacion-principal-cn0">4.1 Interfaz de alimentación principal CN0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-hmi-del-cable-de-senal-del-panel">4.2 Interfaz HMI del cable de señal del panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-udisk">4.3 Interfaz UDisk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-pc-usb">4.4 Interfaz PC-USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-ethernet">4.5 Interfaz Ethernet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#puerto-de-salida-general-cn1">4.6 Puerto de salida general CN1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#puerto-de-entrada-general-cn2">4.7 Puerto de entrada general CN2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-de-entrada-de-limites-de-cuatro-ejes-cn3-cn4">4.8 Interfaz de entrada de límites de cuatro ejes CN3/CN4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-de-drivers-de-motor-x-y-z-u-axis-x-a-axis-u">4.9 Interfaz de drivers de motor X/Y/Z/U: AXIS_X a AXIS_U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-de-control-de-potencia-laser-cn5-cn6">4.10 Interfaz de control de potencia láser CN5/CN6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#ejemplos-de-interfaz-de-potencia-laser">5. Ejemplos de interfaz de potencia láser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#descripcion">5.1 Descripción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejemplo-con-tubo-laser-de-vidrio">5.2 Ejemplo con tubo láser de vidrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejemplo-con-laser-rf">5.3 Ejemplo con láser RF</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#ejemplos-de-interfaz-de-driver-para-motor-paso-a-paso-servo">6. Ejemplos de interfaz de driver para motor paso a paso/servo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">6.1 Descripción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejemplo-de-conexion-del-driver-de-motor">6.2 Ejemplo de conexión del driver de motor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#ejemplos-de-cableado-de-puertos-de-e-s">7. Ejemplos de cableado de puertos de E/S</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#entradas">7.1 Entradas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#salidas">7.2 Salidas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#instrucciones-de-operacion-del-panel">8. Instrucciones de operación del panel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">8.1 Descripción</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vista-general">8.1.1 Vista general</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#descripcion-de-las-teclas">8.1.2 Descripción de las teclas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaz-principal">8.2 Interfaz principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ajuste-de-velocidad">8.2 Ajuste de velocidad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ajuste-de-potencia-maxima-minima">8.3 Ajuste de potencia máxima/mínima</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracion-de-parametros-de-capa">8.4 Configuración de parámetros de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#funcion-de-menu">8.5 Función de menú</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-usuario">8.5.1 Parámetros de usuario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-del-fabricante">8.5.2 Parámetros del fabricante</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-de-origenes">8.5.3 Configuración de orígenes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copia-de-seguridad-de-parametros">8.5.4 Copia de seguridad de parámetros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restauracion-de-parametros">8.5.5 Restauración de parámetros</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ajustes-del-controlador">8.6 Ajustes del controlador</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#idioma">8.6.1 Idioma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#origen-de-pantalla">8.6.2 Origen de pantalla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#panel-inalambrico">8.6.3 Panel inalámbrico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-ip">8.6.4 Configuración IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#informacion-del-sistema">8.6.5 Información del sistema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#funciones">8.7 Funciones</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reinicio-de-ejes">8.7.1 Reinicio de ejes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bloqueo-del-teclado">8.7.2 Bloqueo del teclado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-manual">8.7.3 Configuración manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ajuste-del-laser">8.7.4 Ajuste del láser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diagnostico">8.7.5 Diagnóstico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#informacion-de-la-fuente-laser">8.7.6 Información de la fuente láser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gestion-de-archivos">8.8 Gestión de archivos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#archivos-de-memoria">8.8.1 Archivos de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operaciones-de-memoria">8.8.2 Operaciones de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#formateo-de-memoria">8.8.3 Formateo de memoria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#archivos-de-memoria-usb">8.8.4 Archivos de memoria USB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ingreso-y-configuracion-de-contrasenas">8.9 Ingreso y configuración de contraseñas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ingreso-de-contrasena">8.9.1 Ingreso de contraseña</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-de-contrasena">8.9.2 Configuración de contraseña</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#mensajes-y-alarmas">8.10 Mensajes y alarmas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#explicacion-de-parametros-de-fabricante-y-usuario">9. Explicación de parámetros de fabricante y usuario</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">9.1 Parámetros del fabricante</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-del-motor">9.1.1 Parámetros del motor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-las-teclas-de-movimiento">Parámetros de las teclas de movimiento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-del-laser">9.1.2 Parámetros del láser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#otros-parametros-del-fabricante">9.1.3 Otros parámetros del fabricante</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">9.2 Parámetros de usuario</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-corte">9.2.1 Parámetros de corte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-escaneo">9.2.2 Parámetros de escaneo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-alimentacion">9.2.3 Parámetros de alimentación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-reinicio">9.2.4 Parámetros de reinicio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parametros-de-recorrido-de-contorno-go-scale">9.2.5 Parámetros de recorrido de contorno (Go Scale)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#otros-parametros-de-usuario">9.2.6 Otros parámetros de usuario</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Seguridad y Ejemplos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/0_seguridad_uso.html">Seguridad y recomendaciones de uso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tema_3/1_ejemplos.html">Ejemplos</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Cortadora y grabadora Láser R130100</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">RuiDa RDC6445G</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ruida-rdc6445g">
+<h1>RuiDa RDC6445G<a class="headerlink" href="#ruida-rdc6445g" title="Link to this heading"></a></h1>
+<section id="declaracion-de-derechos-de-autor">
+<h2>Declaración de derechos de autor<a class="headerlink" href="#declaracion-de-derechos-de-autor" title="Link to this heading"></a></h2>
+<p>Shenzhen Reader Technology Co., Ltd. se reserva todos los derechos.</p>
+<p>Shenzhen Reader Technology Co., Ltd. (en adelante, “RD Co., Ltd.”) posee los derechos de patente, derechos de autor y demás derechos de propiedad intelectual sobre este producto y su software relacionado. Sin autorización, ninguna persona puede copiar, fabricar, procesar ni utilizar este producto o sus componentes relacionados, directa o indirectamente.</p>
+<p>RD Co., Ltd. se reserva el derecho de aumentar, reducir o modificar la forma y las funciones del producto descrito en este documento, así como de modificar cualquiera de los documentos adjuntos, sin previo aviso.</p>
+<p>Los usuarios deben leer detenidamente este manual antes de utilizar el producto. RD Co., Ltd. no será responsable de pérdidas o daños directos, indirectos, especiales, incidentales o consecuentes derivados del uso incorrecto de este manual o del producto.</p>
+<p>La máquina en funcionamiento puede ser peligrosa; por ello, los usuarios están obligados a diseñar e implementar mecanismos eficaces de gestión de errores y protección de seguridad. RD Co., Ltd. no asumirá responsabilidad por pérdidas incidentales o consecuentes derivadas de la ausencia o insuficiencia de dichos mecanismos.</p>
+</section>
+</section>
+<section id="descripcion-general">
+<h1>1. Descripción general<a class="headerlink" href="#descripcion-general" title="Link to this heading"></a></h1>
+<section id="presentacion">
+<h2>1.1 Presentación<a class="headerlink" href="#presentacion" title="Link to this heading"></a></h2>
+<p>El sistema RDC6445G es una nueva generación de controladores para máquinas de grabado y corte láser desarrollada por RD Co., Ltd. Además de una elevada estabilidad de hardware, resistencia frente a alta tensión y electricidad estática, y una interfaz hombre-máquina TFT de 5 pulgadas, el sistema incorpora funciones de software avanzadas: control completo de movimiento de cuatro ejes, almacenamiento de archivos de gran capacidad, dos canales independientes y ajustables para el control digital de potencia láser, compatibilidad mejorada con dispositivos USB y múltiples entradas/salidas generales y especiales. El sistema puede comunicarse con un PC mediante USB 2.0 o Ethernet y detecta automáticamente el modo de comunicación.</p>
+</section>
+<section id="descripcion-del-modelo-del-controlador">
+<h2>1.2 Descripción del modelo del controlador<a class="headerlink" href="#descripcion-del-modelo-del-controlador" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/image1.png"><img alt="Figura 1.2-1. Descomposición de la nomenclatura del modelo RDC6445G (figura original)." src="../../_images/image1.png" style="width: 95%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 1.2-1. Descomposición de la nomenclatura del modelo RDC6445G (figura original).</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La nomenclatura del controlador identifica la familia de productos técnicos de RD, el control láser, la revisión de hardware, la subversión de hardware, la tarjeta de cuatro ejes, la pantalla TFT de 854×480 y la edición convencional.</p>
+</section>
+<section id="comparacion-de-prestaciones-de-controladores">
+<h2>1.3 Comparación de prestaciones de controladores<a class="headerlink" href="#comparacion-de-prestaciones-de-controladores" title="Link to this heading"></a></h2>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 24.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>RDLC420</p></th>
+<th class="head"><p>RDC6332G</p></th>
+<th class="head"><p>RDC6342G</p></th>
+<th class="head"><p>RDC644XG</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alimentación</p></td>
+<td><p>5 V y 24 V independientes</p></td>
+<td><p>24 V; compatible con 36 V (no recomendado)</p></td>
+<td><p>24 V; compatible con 36 V (no recomendado)</p></td>
+<td><p>24 V; compatible con 36 V (no recomendado)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Puertos láser</p></td>
+<td><p>1 digital y 1 analógico</p></td>
+<td><p>2 digitales + 2 analógicos, independientes</p></td>
+<td><p>2 digitales + 2 analógicos, independientes</p></td>
+<td><p>2 digitales, independientes y sin interferencia</p></td>
+</tr>
+<tr class="row-even"><td><p>Velocidad de copia USB</p></td>
+<td><p>Normal</p></td>
+<td><p>Rápida</p></td>
+<td><p>Rápida</p></td>
+<td><p>Muy rápida</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compatibilidad USB</p></td>
+<td><p>Dispositivos de pequeña capacidad</p></td>
+<td><p>Capacidades diversas</p></td>
+<td><p>Capacidades diversas</p></td>
+<td><p>Capacidades diversas</p></td>
+</tr>
+<tr class="row-even"><td><p>Memoria</p></td>
+<td><p>64 MB</p></td>
+<td><p>256 MB</p></td>
+<td><p>256 MB</p></td>
+<td><p>128 MB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tolerancia a fallos de memoria</p></td>
+<td><p>Normal</p></td>
+<td><p>Detección de sectores defectuosos, formato y buena tolerancia</p></td>
+<td><p>Detección de sectores defectuosos, formato y buena tolerancia</p></td>
+<td><p>Detección de sectores defectuosos, formato y buena tolerancia</p></td>
+</tr>
+</tbody>
+</table>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 24.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Función</p></th>
+<th class="head"><p>RDLC420</p></th>
+<th class="head"><p>RDC6332G</p></th>
+<th class="head"><p>RDC6342G</p></th>
+<th class="head"><p>RDC644XG</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Entradas generales</p></td>
+<td><p>2</p></td>
+<td><p>4 (2 generales + 2 especiales)</p></td>
+<td><p>4 (2 generales + 2 especiales)</p></td>
+<td><p>4 (2 generales + 2 especiales)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Salidas generales</p></td>
+<td><p>1 salida de baja corriente; requiere etapa adicional</p></td>
+<td><p>4 salidas de 500 mA, OC, sin protección de corriente inversa</p></td>
+<td><p>4 salidas de 500 mA, OC, sin protección de corriente inversa</p></td>
+<td><p>4 salidas de 500 mA, OC, con protección de corriente inversa</p></td>
+</tr>
+<tr class="row-even"><td><p>Reanudación tras corte de energía</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Múltiples orígenes</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>Respaldo de parámetros</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vista previa del tiempo de trabajo</p></td>
+<td><p>No</p></td>
+<td><p>Sí, precisión de 1 ms</p></td>
+<td><p>Sí, precisión de 1 ms</p></td>
+<td><p>Sí, precisión de 1 ms</p></td>
+</tr>
+<tr class="row-even"><td><p>Actualización en línea del programa de placa</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Modificación en línea de potencia/velocidad</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>Modificación fuera de línea de capas</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Actualización en línea de pantalla de inicio</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-even"><td><p>Vista previa dinámica/estática de archivo</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Barra de progreso de ejecución</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>Edición de parámetros fabricante/usuario desde panel</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pantalla</p></td>
+<td><p>128×64, matriz de puntos</p></td>
+<td><p>TFT 320×240</p></td>
+<td><p>TFT 320×240</p></td>
+<td><p>TFT 320×480</p></td>
+</tr>
+<tr class="row-even"><td><p>Límite suave</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+</tbody>
+</table>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 24.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+<col style="width: 19.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica de movimiento</p></th>
+<th class="head"><p>RDLC420</p></th>
+<th class="head"><p>RDC6332G</p></th>
+<th class="head"><p>RDC6342G</p></th>
+<th class="head"><p>RDC644XG</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Límite físico</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enlace del eje Z</p></td>
+<td><p>No</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+<td><p>Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>Alimentación</p></td>
+<td><p>Unidireccional</p></td>
+<td><p>Uni/bidireccional seleccionable</p></td>
+<td><p>Uni/bidireccional seleccionable</p></td>
+<td><p>Uni/bidireccional seleccionable</p></td>
+</tr>
+<tr class="row-odd"><td><p>Restablecimiento al encender</p></td>
+<td><p>Fijo</p></td>
+<td><p>Configurable por eje</p></td>
+<td><p>Configurable por eje</p></td>
+<td><p>Configurable por eje</p></td>
+</tr>
+<tr class="row-even"><td><p>Velocidad por teclas</p></td>
+<td><p>Fija</p></td>
+<td><p>Configurable</p></td>
+<td><p>Configurable</p></td>
+<td><p>Configurable</p></td>
+</tr>
+<tr class="row-odd"><td><p>Número de ejes</p></td>
+<td><p>4</p></td>
+<td><p>3 (Z configurable como eje plano o alimentación)</p></td>
+<td><p>3 (Z configurable como eje plano o alimentación)</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Cifrado</p></td>
+<td><p>Basado en hora del PC</p></td>
+<td><p>RTC + batería para cifrado de hardware</p></td>
+<td><p>RTC + batería para cifrado de hardware</p></td>
+<td><p>Sin RTC; cifrado integrado</p></td>
+</tr>
+<tr class="row-odd"><td><p>Comunicación</p></td>
+<td><p>USB 2.0</p></td>
+<td><p>Ethernet 10/100 MHz o USB 2.0</p></td>
+<td><p>Ethernet 10/100 MHz o USB 2.0</p></td>
+<td><p>Ethernet 10/100 MHz o USB 2.0; detección automática</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="dimensiones-de-instalacion">
+<h1>2. Dimensiones de instalación<a class="headerlink" href="#dimensiones-de-instalacion" title="Link to this heading"></a></h1>
+<section id="dimensiones-de-instalacion-de-la-placa-principal">
+<h2>2.1 Dimensiones de instalación de la placa principal<a class="headerlink" href="#dimensiones-de-instalacion-de-la-placa-principal" title="Link to this heading"></a></h2>
+<p>Todas las dimensiones se expresan en milímetros (mm) y tienen una precisión de 0,1 mm. Los cuatro orificios de montaje son simétricos.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/image2.png"><img alt="Figura 2.1-1. Dimensiones de instalación de la placa principal (figura original)." src="../../_images/image2.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 2.1-1. Dimensiones de instalación de la placa principal (figura original).</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="dimensiones-del-panel">
+<h2>2.2 Dimensiones del panel<a class="headerlink" href="#dimensiones-del-panel" title="Link to this heading"></a></h2>
+<p>Todas las dimensiones se expresan en milímetros (mm) y tienen una precisión de 0,1 mm.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="Figura 2.2-1. Dimensiones del panel (figura original)." src="../../_images/image3.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 2.2-1. Dimensiones del panel (figura original).</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="imagenes-del-equipo-e-interfaces">
+<h1>3. Imágenes del equipo e interfaces<a class="headerlink" href="#imagenes-del-equipo-e-interfaces" title="Link to this heading"></a></h1>
+<section id="imagen-de-la-placa-principal">
+<h2>3.1 Imagen de la placa principal<a class="headerlink" href="#imagen-de-la-placa-principal" title="Link to this heading"></a></h2>
+<p>Para una descripción detallada de los pines, consulte el capítulo 4, “Descripción de las señales de interfaz de la placa principal”.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/image4.png"><img alt="Figura 3.1-1. Placa principal RDC644XG (figura original)." src="../../_images/image4.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 3.1-1. Placa principal RDC644XG (figura original).</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="imagen-del-panel">
+<h2>3.2 Imagen del panel<a class="headerlink" href="#imagen-del-panel" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../_images/image5.png"><img alt="Figura 3.2-1. Panel de control (figura original)." src="../../_images/image5.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 3.2-1. Panel de control (figura original).</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="conexion-electrica">
+<h2>3.3 Conexión eléctrica<a class="headerlink" href="#conexion-electrica" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="Figura 3.3-1. Esquema general de conexión eléctrica (figura original)." src="../../_images/image6.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 3.3-1. Esquema general de conexión eléctrica (figura original).</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="indicadores-led">
+<h2>3.4 Indicadores LED<a class="headerlink" href="#indicadores-led" title="Link to this heading"></a></h2>
+<p>El RDC6445G dispone de quince indicadores LED rojos:</p>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>LED</p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Significado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LED1</p></td>
+<td><p>LmtX-</p></td>
+<td><p>Indicador de límite negativo del eje X</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED2</p></td>
+<td><p>LmtX+</p></td>
+<td><p>Límite positivo del eje X</p></td>
+</tr>
+<tr class="row-even"><td><p>LED3</p></td>
+<td><p>LmtY-</p></td>
+<td><p>Límite negativo del eje Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED4</p></td>
+<td><p>LmtY+</p></td>
+<td><p>Límite positivo del eje Y</p></td>
+</tr>
+<tr class="row-even"><td><p>LED5</p></td>
+<td><p>LmtZ-</p></td>
+<td><p>Límite negativo del eje Z</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED6</p></td>
+<td><p>LmtZ+</p></td>
+<td><p>Límite positivo del eje Z</p></td>
+</tr>
+<tr class="row-even"><td><p>LED7</p></td>
+<td><p>LmtU-</p></td>
+<td><p>Límite negativo del eje U</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED8</p></td>
+<td><p>LmtU+</p></td>
+<td><p>Límite positivo del eje U</p></td>
+</tr>
+<tr class="row-even"><td><p>LED9</p></td>
+<td><p>Wp1</p></td>
+<td><p>Protección de agua 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED10</p></td>
+<td><p>Wp2</p></td>
+<td><p>Protección de agua 2</p></td>
+</tr>
+<tr class="row-even"><td><p>LED11</p></td>
+<td><p>Act</p></td>
+<td><p>Comunicación Ethernet</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED12</p></td>
+<td><p>Link</p></td>
+<td><p>Enlace Ethernet</p></td>
+</tr>
+<tr class="row-even"><td><p>LED13</p></td>
+<td><p>Err</p></td>
+<td><p>Error de hardware del controlador</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED14</p></td>
+<td><p>Run</p></td>
+<td><p>Estado normal de funcionamiento</p></td>
+</tr>
+<tr class="row-even"><td><p>LED15</p></td>
+<td><p>+5V</p></td>
+<td><p>Alimentación de +5 V</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="descripcion-de-las-senales-de-interfaz-de-la-placa-principal">
+<h1>4. Descripción de las señales de interfaz de la placa principal<a class="headerlink" href="#descripcion-de-las-senales-de-interfaz-de-la-placa-principal" title="Link to this heading"></a></h1>
+<section id="interfaz-de-alimentacion-principal-cn0">
+<h2>4.1 Interfaz de alimentación principal CN0<a class="headerlink" href="#interfaz-de-alimentacion-principal-cn0" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Masa de alimentación de 24 V (entrada)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>+24V</p></td>
+<td><p>Positivo de alimentación de 24 V (entrada)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition caution">
+<p class="admonition-title">Prudencia</p>
+<p>Este sistema de control utiliza una única fuente de 24 V. Para disponer de margen suficiente, se recomienda una fuente de 24 V / 2 A. El sistema es compatible con alimentación de 36 V, por lo que la fuente de 36 V del driver de movimiento puede conectarse directamente a este puerto principal, aunque en general no se recomienda hacerlo.</p>
+</div>
+</section>
+<section id="interfaz-hmi-del-cable-de-senal-del-panel">
+<h2>4.2 Interfaz HMI del cable de señal del panel<a class="headerlink" href="#interfaz-hmi-del-cable-de-senal-del-panel" title="Link to this heading"></a></h2>
+<p>El cable de señal del panel es un cable pin a pin y se suministra de fábrica con el controlador.</p>
+</section>
+<section id="interfaz-udisk">
+<h2>4.3 Interfaz UDisk<a class="headerlink" href="#interfaz-udisk" title="Link to this heading"></a></h2>
+<p>UDisk utiliza una interfaz USB tipo A (macho). El controlador accede a la memoria USB a través de esta interfaz.</p>
+</section>
+<section id="interfaz-pc-usb">
+<h2>4.4 Interfaz PC-USB<a class="headerlink" href="#interfaz-pc-usb" title="Link to this heading"></a></h2>
+<p>PC-USB utiliza una interfaz USB tipo B. El controlador puede comunicarse con el PC a través de este puerto.</p>
+</section>
+<section id="interfaz-ethernet">
+<h2>4.5 Interfaz Ethernet<a class="headerlink" href="#interfaz-ethernet" title="Link to this heading"></a></h2>
+<p>Mediante esta interfaz, la placa principal puede comunicarse con un PC mediante Ethernet 10/100 MHz.</p>
+<div class="admonition caution">
+<p class="admonition-title">Prudencia</p>
+<p>Se recomienda utilizar un cable Ethernet directo pin a pin.</p>
+</div>
+</section>
+<section id="puerto-de-salida-general-cn1">
+<h2>4.6 Puerto de salida general CN1<a class="headerlink" href="#puerto-de-salida-general-cn1" title="Link to this heading"></a></h2>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Masa de alimentación (salida)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Out2</p></td>
+<td><p>Salida general; función reservada.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Out1</p></td>
+<td><p>Salida general; función reservada.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Status</p></td>
+<td><p>Salida general de estado de funcionamiento. Si se conecta externamente a un relé, la bobina se activa durante el trabajo; no cambia durante una pausa. Al finalizar el trabajo o detenerlo manualmente, la bobina del relé se desactiva.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Wind</p></td>
+<td><p>Salida general para el control del soplador. Cuando el control del soplador está habilitado, este puerto emite su señal de control; de lo contrario puede utilizarse para otras señales especiales. Si se emplea un relé externo, su bobina se activa con el soplador encendido y se desactiva al apagarlo. El estado del soplador puede configurarse por capa.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>+24V</p></td>
+<td><p>Salida positiva de alimentación. Será 24 V si el controlador se alimenta con 24 V, o 36 V si se alimenta con 36 V.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Todas las salidas están aisladas mediante optoacopladores. Cada salida puede suministrar hasta 500 mA, es de colector abierto (OC) y puede accionar directamente un relé de 6 V o 24 V.</p>
+</div>
+</section>
+<section id="puerto-de-entrada-general-cn2">
+<h2>4.7 Puerto de entrada general CN2<a class="headerlink" href="#puerto-de-entrada-general-cn2" title="Link to this heading"></a></h2>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Masa de alimentación (salida)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>FootSW</p></td>
+<td><p>Entrada para pedal. Al pisarlo se aplica un nivel bajo; al soltarlo la entrada queda abierta o recibe nivel alto. Si el pedal permanece presionado al menos 100 ms: con la máquina en reposo inicia el trabajo; durante el trabajo lo pausa; en pausa lo reanuda. Su función equivale a la tecla Inicio/Pausa. Si una segunda pulsación ocurre con menos de 100 ms de separación respecto a la primera, la placa la considera inválida.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>DrProc</p></td>
+<td><p>Entrada de protección. Se utiliza para condiciones especiales, por ejemplo protección por puerta abierta. Puede habilitarse o deshabilitarse. Si está habilitada, un nivel alto o una entrada abierta activa la protección, pausa el trabajo y desactiva el láser.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Shot</p></td>
+<td><p>Entrada manual de encendido/apagado del láser. Nivel bajo: láser activado; nivel alto o sin conexión: láser desactivado.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>IN1</p></td>
+<td><p>Entrada general; función reservada.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>+24V</p></td>
+<td><p>Salida positiva de alimentación: 24 V con alimentación principal de 24 V o 36 V con alimentación principal de 36 V.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="interfaz-de-entrada-de-limites-de-cuatro-ejes-cn3-cn4">
+<h2>4.8 Interfaz de entrada de límites de cuatro ejes CN3/CN4<a class="headerlink" href="#interfaz-de-entrada-de-limites-de-cuatro-ejes-cn3-cn4" title="Link to this heading"></a></h2>
+<p>Para X/Y se utiliza CN4:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Masa (salida)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>LmtY-</p></td>
+<td><p>Límite Y- / coordenada 0 del eje Y</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>LmtY+</p></td>
+<td><p>Límite Y+ / coordenada máxima del eje Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>LmtX-</p></td>
+<td><p>Límite X- / coordenada 0 del eje X</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>LmtX+</p></td>
+<td><p>Límite X+ / coordenada máxima del eje X</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Puxy</p></td>
+<td><p>Salida positiva de 5 V</p></td>
+</tr>
+</tbody>
+</table>
+<p>La polaridad de los límites puede configurarse. Cuando un eje alcanza el límite, puede generar una señal de nivel bajo y encender el LED correspondiente; al abandonar la posición de límite, la señal pasa a nivel alto o se desconecta y el indicador se apaga. Una configuración incorrecta de la polaridad puede impedir la detección del límite durante el reinicio y provocar una colisión del eje.</p>
+<p>Las definiciones de pines de las entradas de límite Z/U en CN3 son equivalentes a las de CN4. Todas las entradas de límite de los ejes X, Y, Z y U son compatibles con niveles lógicos de 5 V, 12 V y 24 V.</p>
+</section>
+<section id="interfaz-de-drivers-de-motor-x-y-z-u-axis-x-a-axis-u">
+<h2>4.9 Interfaz de drivers de motor X/Y/Z/U: AXIS_X a AXIS_U<a class="headerlink" href="#interfaz-de-drivers-de-motor-x-y-z-u-axis-x-a-axis-u" title="Link to this heading"></a></h2>
+<p>Las interfaces de los cuatro ejes de movimiento son iguales. Se toma AXIS_X como ejemplo:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>DIR</p></td>
+<td><p>Señal de dirección (salida OC)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>PUL</p></td>
+<td><p>Señal de pulsos (salida OC)</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>+5V</p></td>
+<td><p>Salida positiva de 5 V</p></td>
+</tr>
+</tbody>
+</table>
+<p>La polaridad de la señal de dirección puede configurarse. Si durante el reinicio un eje se desplaza en sentido contrario al origen de máquina, la polaridad de dirección de ese eje es incorrecta. En ese caso debe desconectarse temporalmente el enlace entre el eje y su driver para evitar una colisión por falta de detección del límite, corregir la polaridad y volver a reiniciar la placa.</p>
+<p>La señal de pulsos puede configurarse para ser válida por flanco descendente o flanco ascendente. El valor predeterminado es flanco descendente.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Las señales PUL y DIR son salidas de colector abierto (OC). El controlador y el driver del motor deben conectarse con ánodo común.</p>
+</div>
+</section>
+<section id="interfaz-de-control-de-potencia-laser-cn5-cn6">
+<h2>4.10 Interfaz de control de potencia láser CN5/CN6<a class="headerlink" href="#interfaz-de-control-de-potencia-laser-cn5-cn6" title="Link to this heading"></a></h2>
+<p>El sistema dispone de dos interfaces digitales independientes y ajustables para el control de potencia láser. Ambas son similares; se toma CN5 como ejemplo:</p>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 12.0%" />
+<col style="width: 23.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Masa de alimentación (salida)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>L-ON1</p></td>
+<td><p>Habilitación del láser. Para láser RF normalmente no se utiliza. Para tubo de vidrio con habilitación activa a nivel bajo, se conecta a la entrada de habilitación de la fuente y controla el encendido/apagado del láser.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>LPWM1</p></td>
+<td><p>Control de potencia. Para láser RF se conecta a RF-PWM. Para tubo de vidrio se conecta a la entrada PWM de la fuente de potencia y controla la potencia del láser.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>WP1</p></td>
+<td><p>Entrada de protección de agua de la fuente láser 1. Si la protección está habilitada, nivel bajo se considera normal; nivel alto provoca el cierre forzado del láser, pausa el trabajo y genera una alarma. Si está deshabilitada, la entrada no se supervisa. La entrada de protección de agua debe ser de nivel lógico 24 V.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>L-AN1</p></td>
+<td><p>Señal analógica de potencia láser. Si se utiliza tubo de vidrio, se recomienda este pin para controlar la potencia.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Seleccione correctamente el tipo de láser en los parámetros de fábrica.</p>
+</div>
+</section>
+</section>
+<section id="ejemplos-de-interfaz-de-potencia-laser">
+<h1>5. Ejemplos de interfaz de potencia láser<a class="headerlink" href="#ejemplos-de-interfaz-de-potencia-laser" title="Link to this heading"></a></h1>
+<section id="descripcion">
+<h2>5.1 Descripción<a class="headerlink" href="#descripcion" title="Link to this heading"></a></h2>
+<p>El sistema dispone de dos interfaces digitales independientes y ajustables para el control de potencia láser. Pueden emplearse tanto con fuentes para tubos láser de vidrio como con láseres RF. Es imprescindible seleccionar correctamente el tipo de láser en los parámetros de fábrica; de lo contrario, el control del láser será incorrecto.</p>
+</section>
+<section id="ejemplo-con-tubo-laser-de-vidrio">
+<h2>5.2 Ejemplo con tubo láser de vidrio<a class="headerlink" href="#ejemplo-con-tubo-laser-de-vidrio" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../_images/image7.png"><img alt="Figura 5.2. Ejemplo de conexión de dos fuentes para tubos láser de vidrio (figura original)." src="../../_images/image7.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 5.2. Ejemplo de conexión de dos fuentes para tubos láser de vidrio (figura original).</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ejemplo-con-laser-rf">
+<h2>5.3 Ejemplo con láser RF<a class="headerlink" href="#ejemplo-con-laser-rf" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../_images/image8.png"><img alt="Figura 5.3. Ejemplo de conexión para láseres RF (figura original)." src="../../_images/image8.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 5.3. Ejemplo de conexión para láseres RF (figura original).</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="ejemplos-de-interfaz-de-driver-para-motor-paso-a-paso-servo">
+<h1>6. Ejemplos de interfaz de driver para motor paso a paso/servo<a class="headerlink" href="#ejemplos-de-interfaz-de-driver-para-motor-paso-a-paso-servo" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2>6.1 Descripción<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>La entrada de señal del driver del motor paso a paso/servo utiliza aislamiento optoacoplado. Para las señales de impulsos, algunos drivers consideran válido el cambio del diodo del optoacoplador desde corte a conducción (por ejemplo, flanco descendente válido aplicado al terminal negativo del diodo), mientras que otros utilizan el cambio de conducción a corte (flanco ascendente válido).</p>
+<p>La indicación de flanco ascendente o descendente válido debe interpretarse respecto a la señal de pulso aplicada al terminal negativo del diodo del optoacoplador.</p>
+<p>Algunos drivers tienen entradas independientes y otros disponen internamente de ánodo común; por ello existen configuraciones con cuatro conductores externos y otras con tres (contando únicamente pulso y dirección).</p>
+<p>El controlador RDC644XG ofrece cuatro grupos de interfaces de tres hilos para drivers de movimiento. Cada interfaz proporciona una señal de dirección, una señal de pulso y una salida positiva de 5 V. Las señales de dirección y pulso son salidas OC.</p>
+<p>El RDC644XG debe conectarse al driver con ánodo común. La polaridad de dirección y el flanco válido de pulso pueden modificarse en los parámetros de fábrica.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../../_images/image9.png"><img alt="Figura 6.1-1. Cuatro entradas, señales independientes." src="../../_images/image9.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 6.1-1. Cuatro entradas, señales independientes.</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../../_images/image10.png"><img alt="Figura 6.1-2. Tres entradas, ánodo común." src="../../_images/image10.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 6.1-2. Tres entradas, ánodo común.</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ejemplo-de-conexion-del-driver-de-motor">
+<h2>6.2 Ejemplo de conexión del driver de motor<a class="headerlink" href="#ejemplo-de-conexion-del-driver-de-motor" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../../_images/image11.png"><img alt="Figura 6.2. Ejemplo de conexión de drivers de los ejes X e Y (figura original)." src="../../_images/image11.png" style="width: 55%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 6.2. Ejemplo de conexión de drivers de los ejes X e Y (figura original).</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="ejemplos-de-cableado-de-puertos-de-e-s">
+<h1>7. Ejemplos de cableado de puertos de E/S<a class="headerlink" href="#ejemplos-de-cableado-de-puertos-de-e-s" title="Link to this heading"></a></h1>
+<section id="entradas">
+<h2>7.1 Entradas<a class="headerlink" href="#entradas" title="Link to this heading"></a></h2>
+<p>Las dos entradas de protección de agua utilizan nivel lógico de 24 V. Todas las demás entradas son compatibles con niveles lógicos de 5 V, 12 V y 24 V.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="Figura 7.1-1. Ejemplo de conexiones de entrada (figura original)." src="../../_images/image12.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 7.1-1. Ejemplo de conexiones de entrada (figura original).</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="salidas">
+<h2>7.2 Salidas<a class="headerlink" href="#salidas" title="Link to this heading"></a></h2>
+<p>Todas las salidas están aisladas mediante optoacopladores y admiten hasta 500 mA por canal. Son salidas OC y pueden accionar directamente relés de 6 V/24 V, lámparas LED, zumbadores y dispositivos equivalentes.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../../_images/image13.png"><img alt="Figura 7.2-1. Ejemplo de conexiones de salida (figura original)." src="../../_images/image13.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 7.2-1. Ejemplo de conexiones de salida (figura original).</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="instrucciones-de-operacion-del-panel">
+<h1>8. Instrucciones de operación del panel<a class="headerlink" href="#instrucciones-de-operacion-del-panel" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>8.1 Descripción<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="vista-general">
+<h3>8.1.1 Vista general<a class="headerlink" href="#vista-general" title="Link to this heading"></a></h3>
+<p>El panel de control RDC6445G-HMI (en adelante, “panel”) es una interfaz hombre-máquina basada en una pantalla LCD TFT de 5,0 pulgadas. Ofrece una interfaz amigable, control fluido y una buena relación costo-prestaciones. Puede mostrar en tiempo real la trayectoria de movimiento del controlador, permitiendo visualizar de forma inmediata los gráficos en proceso. Además, admite gestión y vista previa de archivos, modificación de parámetros de usuario y fabricante, selección de idioma y otras funciones.</p>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="../../_images/image14.png"><img alt="Figura 8.1.1-1. Panel RDC6445G-HMI (figura original)." src="../../_images/image14.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.1.1-1. Panel RDC6445G-HMI (figura original).</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36.0%" />
+<col style="width: 64.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>Especificación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pantalla</p></td>
+<td><p>TFT de 5,0 pulgadas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Resolución</p></td>
+<td><p>854 × 480</p></td>
+</tr>
+<tr class="row-even"><td><p>Color</p></td>
+<td><p>64K colores</p></td>
+</tr>
+<tr class="row-odd"><td><p>Comunicación</p></td>
+<td><p>Serie estándar RS232</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="descripcion-de-las-teclas">
+<h3>8.1.2 Descripción de las teclas<a class="headerlink" href="#descripcion-de-las-teclas" title="Link to this heading"></a></h3>
+<table class="fit-table docutils align-default">
+<colgroup>
+<col style="width: 36.0%" />
+<col style="width: 64.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tecla</p></th>
+<th class="head"><p>Función</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reset</p></td>
+<td><p>Reinicia todo el sistema.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Start/Pause</p></td>
+<td><p>Inicia o pausa el trabajo.</p></td>
+</tr>
+<tr class="row-even"><td><p>Pulse / Laser</p></td>
+<td><p>Emite un pulso de láser o activa el láser según el modo configurado.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stop</p></td>
+<td><p>Detiene el trabajo o el movimiento de los ejes.</p></td>
+</tr>
+<tr class="row-even"><td><p>Focus</p></td>
+<td><p>Ejecuta la búsqueda automática de enfoque.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Menu</p></td>
+<td><p>Accede a parámetros de usuario, parámetros de fábrica, idioma y otras opciones.</p></td>
+</tr>
+<tr class="row-even"><td><p>Frame</p></td>
+<td><p>Recorre el contorno del archivo actual.</p></td>
+</tr>
+<tr class="row-odd"><td><p>File</p></td>
+<td><p>Gestiona archivos de memoria interna y memoria USB.</p></td>
+</tr>
+<tr class="row-even"><td><p>Origin</p></td>
+<td><p>Establece el origen relativo.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Power</p></td>
+<td><p>Ajusta la potencia láser de la capa en ejecución o la potencia usada por la tecla Laser.</p></td>
+</tr>
+<tr class="row-even"><td><p>Shift</p></td>
+<td><p>Conmuta funciones especiales.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Speed</p></td>
+<td><p>Ajusta la velocidad de la capa en ejecución o la velocidad de movimiento mediante teclas de dirección.</p></td>
+</tr>
+<tr class="row-even"><td><p>Esc</p></td>
+<td><p>Detiene determinadas operaciones o sale de un menú.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enter</p></td>
+<td><p>Confirma o valida los cambios.</p></td>
+</tr>
+<tr class="row-even"><td><p>Flechas</p></td>
+<td><p>Mueven los ejes X e Y y permiten navegar por las opciones de menú.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Z↑ / Z↓</p></td>
+<td><p>Mueven el eje Z.</p></td>
+</tr>
+<tr class="row-even"><td><p>U+ / U-</p></td>
+<td><p>Mueven el eje U.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jog/Continuous</p></td>
+<td><p>Conmuta entre movimiento por pasos y movimiento continuo.</p></td>
+</tr>
+<tr class="row-even"><td><p>Punto decimal</p></td>
+<td><p>Introduce el separador decimal.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Retroceso</p></td>
+<td><p>Borra el carácter anterior.</p></td>
+</tr>
+<tr class="row-even"><td><p>Teclas 0-9</p></td>
+<td><p>Permiten introducir valores numéricos para los parámetros.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="interfaz-principal">
+<h2>8.2 Interfaz principal<a class="headerlink" href="#interfaz-principal" title="Link to this heading"></a></h2>
+<p>Al encender el sistema se muestra la interfaz principal.</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../../_images/image15.png"><img alt="Figura 8.2. Interfaz principal del panel (figura original)." src="../../_images/image15.png" style="width: 95%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.2. Interfaz principal del panel (figura original).</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Área de visualización gráfica: muestra la trayectoria completa del archivo y la trayectoria recorrida durante la ejecución.</p></li>
+<li><p>Parámetros de ejecución: muestra número de archivo, velocidad, potencia máxima y otros datos del archivo en ejecución.</p></li>
+<li><p>Coordenadas: muestra las coordenadas actuales de los ejes X, Y y Z.</p></li>
+<li><p>Parámetros de capas: muestra información de las capas del archivo actual, como potencia máxima/mínima y velocidad. Con el sistema en reposo, al seleccionar una capa puede modificarse su configuración y guardarse.</p></li>
+<li><p>Estado de ejecución: indica estados como Inactivo, Ejecutando, Pausa o Finalizado.</p></li>
+<li><p>Barra de progreso: muestra el progreso del archivo actual.</p></li>
+<li><p>Número de trabajos: acumula la cantidad de ejecuciones del archivo actual.</p></li>
+<li><p>Dimensiones del archivo: muestra el tamaño del archivo actual.</p></li>
+<li><p>Estado de red: indica el estado de la conexión Ethernet.</p></li>
+<li><p>Estado de bloqueo de teclas: cuando el bloqueo está habilitado se muestra su icono; cualquier pulsación solicita la contraseña de desbloqueo.</p></li>
+</ul>
+<p>Cuando el equipo está inactivo o ha finalizado el trabajo, todas las teclas están disponibles y se puede seleccionar un archivo, modificar parámetros o previsualizar. Durante la ejecución o una pausa, algunas teclas quedan deshabilitadas.</p>
+</section>
+<section id="ajuste-de-velocidad">
+<h2>8.2 Ajuste de velocidad<a class="headerlink" href="#ajuste-de-velocidad" title="Link to this heading"></a></h2>
+<p>En la interfaz principal pulse &lt;Speed&gt;. Introduzca o modifique el valor con las teclas numéricas y Retroceso. Pulse &lt;Enter&gt; para guardar o &lt;Esc&gt; para cancelar y volver a la interfaz principal.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../../_images/image16.png"><img alt="Figura 8.2. Pantalla de ajuste de velocidad (figura original)." src="../../_images/image16.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.2. Pantalla de ajuste de velocidad (figura original).</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ajuste-de-potencia-maxima-minima">
+<h2>8.3 Ajuste de potencia máxima/mínima<a class="headerlink" href="#ajuste-de-potencia-maxima-minima" title="Link to this heading"></a></h2>
+<p>En la interfaz principal pulse &lt;Power&gt;. El bloque de selección azul queda sobre el primer parámetro. Utilice las teclas numéricas y Retroceso para modificarlo, y las flechas para seleccionar otros parámetros. Pulse &lt;Enter&gt; para guardar los cambios o &lt;Esc&gt; para cancelarlos y volver a la interfaz principal.</p>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../../_images/image17.png"><img alt="Figura 8.3. Ajuste de potencia máxima/mínima (figura original)." src="../../_images/image17.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.3. Ajuste de potencia máxima/mínima (figura original).</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configuracion-de-parametros-de-capa">
+<h2>8.4 Configuración de parámetros de capa<a class="headerlink" href="#configuracion-de-parametros-de-capa" title="Link to this heading"></a></h2>
+<p>Después de seleccionar un archivo para previsualizarlo, si el área de parámetros contiene información de capas, pulse &lt;Enter&gt; para desplazar el cursor a la primera capa. Utilice las teclas Arriba/Abajo para seleccionar la capa deseada y pulse &lt;Enter&gt; para consultar sus parámetros.</p>
+<p>Cuando el bloque azul se encuentre sobre el número de capa, pulse &lt;Enter&gt; para entrar en el modo de selección; use Arriba/Abajo para elegir otra capa y vuelva a pulsar &lt;Enter&gt; para salir de ese modo. A continuación, use Arriba/Abajo para moverse al parámetro que desea modificar y edítelo con las teclas numéricas y Retroceso. Para guardar, mueva el bloque a “Write parameters” y pulse &lt;Enter&gt;. Si no se ejecuta esta acción, los cambios no se guardan. Pulse &lt;Esc&gt; para regresar a la interfaz principal.</p>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../../_images/image18.png"><img alt="Figura 8.4-1. Información de capas." src="../../_images/image18.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.4-1. Información de capas.</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="Figura 8.4-2. Selección de capa." src="../../_images/image19.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.4-2. Selección de capa.</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="../../_images/image20.png"><img alt="Figura 8.4-3. Parámetros de la capa seleccionada." src="../../_images/image20.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.4-3. Parámetros de la capa seleccionada.</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="funcion-de-menu">
+<h2>8.5 Función de menú<a class="headerlink" href="#funcion-de-menu" title="Link to this heading"></a></h2>
+<p>Pulse &lt;Menu&gt; desde la interfaz principal para abrir el menú. Pulse &lt;Esc&gt; para regresar al menú anterior.</p>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="../../_images/image21.png"><img alt="Figura 8.5. Menú principal de configuración (figura original)." src="../../_images/image21.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5. Menú principal de configuración (figura original).</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="parametros-de-usuario">
+<h3>8.5.1 Parámetros de usuario<a class="headerlink" href="#parametros-de-usuario" title="Link to this heading"></a></h3>
+<p>En el menú seleccione “User parameters” y pulse &lt;Enter&gt;. El panel leerá automáticamente los parámetros de la placa principal y mostrará el progreso en “Read Parameters”. Cuando finalice la lectura, utilice Arriba/Abajo para seleccionar una categoría, por ejemplo corte, alimentación o enfoque. El área derecha muestra los parámetros correspondientes. Si no desea modificarlos, pulse &lt;Esc&gt;.</p>
+<p>Para modificar parámetros, pulse &lt;Enter&gt;; el bloque azul pasará al primer parámetro del área. Seleccione un parámetro con Arriba/Abajo. Para valores numéricos utilice las teclas numéricas. Para valores no numéricos, pulse &lt;Enter&gt; para entrar al modo de edición, cambie la opción con Arriba/Abajo y pulse &lt;Enter&gt; para salir. Después de modificar una página, seleccione “Write” y pulse &lt;Enter&gt; para guardar los valores en la placa. Para comprobarlos, seleccione “Read” y pulse &lt;Enter&gt;. Con Izquierda/Derecha se regresa a la selección de categorías.</p>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="../../_images/image22.png"><img alt="Figura 8.5.1-1. Parámetros de usuario." src="../../_images/image22.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.1-1. Parámetros de usuario.</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="../../_images/image23.png"><img alt="Figura 8.5.1-2. Edición de parámetros." src="../../_images/image23.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.1-2. Edición de parámetros.</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../../_images/image24.png"><img alt="Figura 8.5.1-3. Parámetros de corte." src="../../_images/image24.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.1-3. Parámetros de corte.</span><a class="headerlink" href="#id28" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="../../_images/image25.png"><img alt="Figura 8.5.1-4. Parámetros de alimentación." src="../../_images/image25.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.1-4. Parámetros de alimentación.</span><a class="headerlink" href="#id29" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="../../_images/image26.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image26.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id30" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="../../_images/image27.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image27.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id31" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id32">
+<a class="reference internal image-reference" href="../../_images/image28.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image28.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id32" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id33">
+<a class="reference internal image-reference" href="../../_images/image29.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image29.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id33" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id34">
+<a class="reference internal image-reference" href="../../_images/image30.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image30.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id34" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id35">
+<a class="reference internal image-reference" href="../../_images/image31.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image31.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id35" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id36">
+<a class="reference internal image-reference" href="../../_images/image32.png"><img alt="Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario." src="../../_images/image32.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figuras 8.5.1-5 a 8.5.1-11. Pantallas adicionales de parámetros de usuario.</span><a class="headerlink" href="#id36" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="parametros-del-fabricante">
+<h3>8.5.2 Parámetros del fabricante<a class="headerlink" href="#parametros-del-fabricante" title="Link to this heading"></a></h3>
+<p>En el menú seleccione “Vender parameters” y pulse &lt;Enter&gt;. Los parámetros de los ejes Y, Z y U tienen una estructura equivalente a los del eje X. La operación y el método de configuración de los parámetros de fábrica son los mismos que para los parámetros de usuario.</p>
+<figure class="align-center" id="id37">
+<a class="reference internal image-reference" href="../../_images/image33.png"><img alt="Figura 8.5.2-1. Parámetros de fabricante." src="../../_images/image33.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.2-1. Parámetros de fabricante.</span><a class="headerlink" href="#id37" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id38">
+<a class="reference internal image-reference" href="../../_images/image34.png"><img alt="Figura 8.5.2-2. Parámetros de eje." src="../../_images/image34.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.2-2. Parámetros de eje.</span><a class="headerlink" href="#id38" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id39">
+<a class="reference internal image-reference" href="../../_images/image35.png"><img alt="Figura 8.5.2-3. Parámetros láser." src="../../_images/image35.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.2-3. Parámetros láser.</span><a class="headerlink" href="#id39" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id40">
+<a class="reference internal image-reference" href="../../_images/image36.png"><img alt="Figura 8.5.2-4. Otros parámetros." src="../../_images/image36.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.2-4. Otros parámetros.</span><a class="headerlink" href="#id40" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configuracion-de-origenes">
+<h3>8.5.3 Configuración de orígenes<a class="headerlink" href="#configuracion-de-origenes" title="Link to this heading"></a></h3>
+<p>En el menú seleccione “Origin setting” y pulse &lt;Enter&gt;. El bloque azul selecciona inicialmente “Mult origin enable”. Pulse &lt;Enter&gt; para habilitar o deshabilitar esta función; cuando está habilitada, el cuadro pequeño de la derecha se muestra en rojo.</p>
+<p>Para configurar el origen 1, seleccione “Origin 1 enable” y pulse &lt;Enter&gt; para habilitarlo. Pulse &lt;Shift&gt; y use las teclas de dirección para modificar las coordenadas X/Y. Pulse &lt;Origin&gt; para guardar las coordenadas actuales como origen 1 y finalmente pulse &lt;Shift&gt; para volver a la operación normal de la pantalla. Los demás orígenes se configuran del mismo modo.</p>
+<p>Cuando el bloque de selección esté en “Start origin”, pulse &lt;Enter&gt; para editar, cambie el valor con Arriba/Abajo y vuelva a pulsar &lt;Enter&gt; para aplicar. Pulse &lt;Esc&gt; para regresar.</p>
+<ul class="simple">
+<li><p>Habilitar múltiples orígenes: “No” utiliza la lógica de un solo origen y permite establecerlo con la tecla &lt;Origin&gt;. “Sí” activa la lógica de múltiples orígenes y deshabilita la tecla &lt;Origin&gt; para esta función; cada origen se configura desde el menú.</p></li>
+<li><p>Origin Enable 1/2/3/4: permite habilitar o deshabilitar cada uno de los cuatro orígenes de forma independiente.</p></li>
+<li><p>Start Origin: valores 0 a 4. El origen 0 corresponde al origen establecido con la tecla &lt;Origin&gt; en modo de origen único. Los valores 1 a 4 corresponden a los orígenes de la lógica múltiple. El origen inicial puede seleccionarse entre 1 y 4, siempre que esté habilitado; no puede establecerse en 0 desde este parámetro.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si se habilitan los cuatro orígenes y el origen siguiente es el 1, cuando se inicia un archivo de memoria o se carga un archivo desde el PC con la opción de usar el origen original como origen actual, cada trabajo utilizará un origen distinto siguiendo el orden 1→2→3→4→1→2…</p>
+</div>
+<figure class="align-center" id="id41">
+<a class="reference internal image-reference" href="../../_images/image37.png"><img alt="Figura 8.5.3-1. Configuración de orígenes." src="../../_images/image37.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.3-1. Configuración de orígenes.</span><a class="headerlink" href="#id41" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id42">
+<a class="reference internal image-reference" href="../../_images/image38.png"><img alt="Figura 8.5.3-2. Proceso de ajuste del origen." src="../../_images/image38.png" style="width: 95%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.5.3-2. Proceso de ajuste del origen.</span><a class="headerlink" href="#id42" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="copia-de-seguridad-de-parametros">
+<h3>8.5.4 Copia de seguridad de parámetros<a class="headerlink" href="#copia-de-seguridad-de-parametros" title="Link to this heading"></a></h3>
+<p>Seleccione “Backup Factory Parameters” y pulse &lt;Enter&gt;. Aparecerá la interfaz de contraseña; el procedimiento se describe en la sección 8.9. Si la contraseña es correcta, el sistema realizará una copia de seguridad de todos los parámetros de usuario y de fábrica y mostrará un mensaje indicando que la copia se completó correctamente.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Una vez que el fabricante ha ajustado correctamente todos los parámetros de la máquina, esta función permite guardar la configuración para poder recuperarla posteriormente si se modifican valores de forma incorrecta.</p>
+</div>
+</section>
+<section id="restauracion-de-parametros">
+<h3>8.5.5 Restauración de parámetros<a class="headerlink" href="#restauracion-de-parametros" title="Link to this heading"></a></h3>
+<p>Seleccione “Restore Factory Parameters” y pulse &lt;Enter&gt;. Introduzca la contraseña según la sección 8.9. Si es correcta, el sistema restaurará los parámetros de usuario y de fábrica utilizando la copia almacenada previamente y mostrará el mensaje de recuperación correcta.</p>
+</section>
+</section>
+<section id="ajustes-del-controlador">
+<h2>8.6 Ajustes del controlador<a class="headerlink" href="#ajustes-del-controlador" title="Link to this heading"></a></h2>
+<p>Seleccione “Controller Settings” en el menú y pulse &lt;Enter&gt;. Pulse &lt;Esc&gt; para volver al menú anterior.</p>
+<figure class="align-center" id="id43">
+<a class="reference internal image-reference" href="../../_images/image39.png"><img alt="Figura 8.6. Ajustes del controlador (figura original)." src="../../_images/image39.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6. Ajustes del controlador (figura original).</span><a class="headerlink" href="#id43" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="idioma">
+<h3>8.6.1 Idioma<a class="headerlink" href="#idioma" title="Link to this heading"></a></h3>
+<p>Seleccione “Language” y pulse &lt;Enter&gt;. Utilice las teclas de dirección para seleccionar un idioma y pulse &lt;Enter&gt; para aplicarlo. El sistema regresará automáticamente al menú.</p>
+<figure class="align-center" id="id44">
+<a class="reference internal image-reference" href="../../_images/image40.png"><img alt="Figura 8.6.1. Selección de idioma (figura original)." src="../../_images/image40.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6.1. Selección de idioma (figura original).</span><a class="headerlink" href="#id44" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="origen-de-pantalla">
+<h3>8.6.2 Origen de pantalla<a class="headerlink" href="#origen-de-pantalla" title="Link to this heading"></a></h3>
+<p>Seleccione “Screen origin” y pulse &lt;Enter&gt;. Aquí se define el origen de la pantalla. La elección de un origen diferente cambia la posición de la representación gráfica en las direcciones X o Y. Seleccione una opción con las teclas de dirección y pulse &lt;Enter&gt; para aplicarla; pulse &lt;Esc&gt; para volver a la interfaz principal.</p>
+<div class="admonition caution">
+<p class="admonition-title">Prudencia</p>
+<p>Este ajuste solo afecta la vista previa del archivo en la pantalla y no modifica el movimiento de la máquina.</p>
+</div>
+<figure class="align-center" id="id45">
+<a class="reference internal image-reference" href="../../_images/image41.png"><img alt="Figura 8.6.2. Origen de pantalla (figura original)." src="../../_images/image41.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6.2. Origen de pantalla (figura original).</span><a class="headerlink" href="#id45" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="panel-inalambrico">
+<h3>8.6.3 Panel inalámbrico<a class="headerlink" href="#panel-inalambrico" title="Link to this heading"></a></h3>
+<p>Seleccione “Wireless panel” y pulse &lt;Enter&gt;. Para modificar el primer parámetro, pulse &lt;Enter&gt; para entrar al modo de edición, cambie el valor con Arriba/Abajo y pulse &lt;Enter&gt; para salir. Use las teclas de dirección para seleccionar otros parámetros y las teclas numéricas para editarlos. Para aplicar los cambios, seleccione “Write” y pulse &lt;Enter&gt;. Pulse &lt;Esc&gt; para volver al menú anterior.</p>
+<figure class="align-center" id="id46">
+<a class="reference internal image-reference" href="../../_images/image42.png"><img alt="Figura 8.6.3. Configuración del panel inalámbrico (figura original)." src="../../_images/image42.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6.3. Configuración del panel inalámbrico (figura original).</span><a class="headerlink" href="#id46" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configuracion-ip">
+<h3>8.6.4 Configuración IP<a class="headerlink" href="#configuracion-ip" title="Link to this heading"></a></h3>
+<p>Seleccione “IP setting” y pulse &lt;Enter&gt;. Seleccione el parámetro con las teclas de dirección y modifíquelo con las teclas numéricas. Después, seleccione “Write” y pulse &lt;Enter&gt; para aplicar la configuración. Pulse &lt;Esc&gt; para regresar.</p>
+<figure class="align-center" id="id47">
+<a class="reference internal image-reference" href="../../_images/image43.png"><img alt="Figura 8.6.4. Configuración IP (figura original)." src="../../_images/image43.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6.4. Configuración IP (figura original).</span><a class="headerlink" href="#id47" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="informacion-del-sistema">
+<h3>8.6.5 Información del sistema<a class="headerlink" href="#informacion-del-sistema" title="Link to this heading"></a></h3>
+<p>Seleccione “System Info” y pulse &lt;Enter&gt;. Pulse &lt;Enter&gt; para leer la información de la placa principal. Pulse &lt;Esc&gt; para volver al menú anterior.</p>
+<figure class="align-center" id="id48">
+<a class="reference internal image-reference" href="../../_images/image44.png"><img alt="Figura 8.6.5. Información del sistema (figura original)." src="../../_images/image44.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.6.5. Información del sistema (figura original).</span><a class="headerlink" href="#id48" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="funciones">
+<h2>8.7 Funciones<a class="headerlink" href="#funciones" title="Link to this heading"></a></h2>
+<p>En el menú seleccione “Function” y pulse &lt;Enter&gt;. Pulse &lt;Esc&gt; para regresar al menú anterior.</p>
+<figure class="align-center" id="id49">
+<a class="reference internal image-reference" href="../../_images/image45.png"><img alt="Figura 8.7. Menú de funciones (figura original)." src="../../_images/image45.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7. Menú de funciones (figura original).</span><a class="headerlink" href="#id49" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="reinicio-de-ejes">
+<h3>8.7.1 Reinicio de ejes<a class="headerlink" href="#reinicio-de-ejes" title="Link to this heading"></a></h3>
+<p>Seleccione “Axis reset” y pulse &lt;Enter&gt;. Seleccione un eje con las teclas de dirección y pulse &lt;Enter&gt;. El sistema ejecutará el reinicio del eje y mostrará “Resetting…”. Pulse &lt;Esc&gt; para regresar.</p>
+<figure class="align-center" id="id50">
+<a class="reference internal image-reference" href="../../_images/image46.png"><img alt="Figura 8.7.1. Reinicio de ejes (figura original)." src="../../_images/image46.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.1. Reinicio de ejes (figura original).</span><a class="headerlink" href="#id50" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="bloqueo-del-teclado">
+<h3>8.7.2 Bloqueo del teclado<a class="headerlink" href="#bloqueo-del-teclado" title="Link to this heading"></a></h3>
+<p>Seleccione “Keyboard lock” y pulse &lt;Enter&gt;. La opción de contraseña permite definir la contraseña predeterminada utilizada para bloquear el teclado. La opción de bloqueo de teclas bloquea el teclado después de introducir la contraseña correcta y regresa a la interfaz principal. Posteriormente, al pulsar cualquier tecla, el panel solicitará la contraseña de desbloqueo. Consulte la sección 8.9 para el ingreso y configuración de contraseñas.</p>
+<figure class="align-center" id="id51">
+<a class="reference internal image-reference" href="../../_images/image47.png"><img alt="Figura 8.7.2. Bloqueo del teclado (figura original)." src="../../_images/image47.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.2. Bloqueo del teclado (figura original).</span><a class="headerlink" href="#id51" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configuracion-manual">
+<h3>8.7.3 Configuración manual<a class="headerlink" href="#configuracion-manual" title="Link to this heading"></a></h3>
+<p>Seleccione “Manual setting” y pulse &lt;Enter&gt;. El modo manual dispone de las opciones “Continue” y “Manual”. Pulse &lt;Enter&gt; para entrar al modo de edición, modifique con Arriba/Abajo y pulse &lt;Enter&gt; para salir. Después de efectuar los cambios, seleccione “Write Parameters” y pulse &lt;Enter&gt; para aplicarlos.</p>
+<p>En modo “Continue”, el parámetro “Manual” no es válido: al mantener presionada una tecla de dirección, el eje se mueve y se detiene al soltarla. En modo “Manual”, cada pulsación de una tecla de dirección desplaza el eje una distancia fija, salvo que se exceda el recorrido permitido.</p>
+<figure class="align-center" id="id52">
+<a class="reference internal image-reference" href="../../_images/image48.png"><img alt="Figura 8.7.3. Ajustes del movimiento manual (figura original)." src="../../_images/image48.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.3. Ajustes del movimiento manual (figura original).</span><a class="headerlink" href="#id52" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ajuste-del-laser">
+<h3>8.7.4 Ajuste del láser<a class="headerlink" href="#ajuste-del-laser" title="Link to this heading"></a></h3>
+<p>Seleccione “Laser setting” y pulse &lt;Enter&gt;. El método de operación es equivalente al ajuste manual. En modo “Continue”, el parámetro de tiempo de láser no es válido: el láser permanece activo mientras se mantiene presionada la tecla Laser y se desactiva al soltarla. En modo “Manual”, una pulsación de la tecla Laser emite durante el tiempo fijo configurado.</p>
+<figure class="align-center" id="id53">
+<a class="reference internal image-reference" href="../../_images/image49.png"><img alt="Figura 8.7.4. Ajuste del láser (figura original)." src="../../_images/image49.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.4. Ajuste del láser (figura original).</span><a class="headerlink" href="#id53" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="diagnostico">
+<h3>8.7.5 Diagnóstico<a class="headerlink" href="#diagnostico" title="Link to this heading"></a></h3>
+<p>Seleccione “Diagnose” y pulse &lt;Enter&gt;. La pantalla muestra la información de E/S del hardware. Pulse &lt;Enter&gt; para leer el estado del sistema. Cuando una señal de hardware está activa, el pequeño cuadro situado a la izquierda de la entrada correspondiente se muestra en rojo; en caso contrario se muestra en gris. Pulse &lt;Esc&gt; para regresar.</p>
+<figure class="align-center" id="id54">
+<a class="reference internal image-reference" href="../../_images/image50.png"><img alt="Figura 8.7.5. Pantalla de diagnóstico (figura original)." src="../../_images/image50.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.5. Pantalla de diagnóstico (figura original).</span><a class="headerlink" href="#id54" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="informacion-de-la-fuente-laser">
+<h3>8.7.6 Información de la fuente láser<a class="headerlink" href="#informacion-de-la-fuente-laser" title="Link to this heading"></a></h3>
+<p>La función de información de la fuente láser debe configurarse previamente desde el software de PC. Seleccione “Laser power info” y pulse &lt;Enter&gt;. Cuando el bloque azul se sitúe sobre las fuentes 1, 2, 3 o 4, pulse &lt;Enter&gt; para consultar la información de cada fuente.</p>
+<p>Cuando el bloque azul esté en “diagnostic TL” o “diagnostic TH”, pulse &lt;Enter&gt; para comprobar si existe una anomalía en las E/S de la fuente de alimentación láser; si se detecta una anomalía se genera una alarma.</p>
+<figure class="align-center" id="id55">
+<a class="reference internal image-reference" href="../../_images/image51.png"><img alt="Figura 8.7.6-1. Información de fuente láser." src="../../_images/image51.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.6-1. Información de fuente láser.</span><a class="headerlink" href="#id55" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id56">
+<a class="reference internal image-reference" href="../../_images/image52.png"><img alt="Figura 8.7.6-2. Detalle de la fuente láser." src="../../_images/image52.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.7.6-2. Detalle de la fuente láser.</span><a class="headerlink" href="#id56" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="gestion-de-archivos">
+<h2>8.8 Gestión de archivos<a class="headerlink" href="#gestion-de-archivos" title="Link to this heading"></a></h2>
+<section id="archivos-de-memoria">
+<h3>8.8.1 Archivos de memoria<a class="headerlink" href="#archivos-de-memoria" title="Link to this heading"></a></h3>
+<p>Desde la interfaz principal pulse &lt;Menu&gt; y acceda a la gestión de archivos. El sistema lee primero los archivos almacenados en memoria y muestra su nombre y número de ejecuciones. El archivo seleccionado se previsualiza en el área inferior derecha. Use Arriba/Abajo para mover el cursor por la lista. Con el cursor sobre un archivo, pulse &lt;Enter&gt; para previsualizarlo en la interfaz principal; pulse &lt;Esc&gt; para cerrar la vista previa. Izquierda/Derecha permite desplazarse entre las opciones laterales.</p>
+<ul class="simple">
+<li><p>Run: ejecuta el archivo seleccionado.</p></li>
+<li><p>Track: recorre el contorno del archivo seleccionado; el modo de recorrido es configurable.</p></li>
+<li><p>Work time: estima el tiempo de ejecución del archivo seleccionado con precisión de 1 ms.</p></li>
+<li><p>Clear count: borra el contador de ejecuciones del archivo seleccionado.</p></li>
+<li><p>Copy to U disk: copia el archivo seleccionado a la memoria USB.</p></li>
+<li><p>Delete: elimina el archivo seleccionado de la memoria interna.</p></li>
+<li><p>U disk: abre la lista de archivos de la memoria USB.</p></li>
+<li><p>Memory operation: abre otras operaciones sobre los archivos de memoria.</p></li>
+<li><p>Read mem file: vuelve a leer la lista de archivos de memoria.</p></li>
+</ul>
+<figure class="align-center" id="id57">
+<a class="reference internal image-reference" href="../../_images/image53.png"><img alt="Figura 8.8.1. Gestión de archivos en memoria (figura original)." src="../../_images/image53.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.8.1. Gestión de archivos en memoria (figura original).</span><a class="headerlink" href="#id57" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="operaciones-de-memoria">
+<h3>8.8.2 Operaciones de memoria<a class="headerlink" href="#operaciones-de-memoria" title="Link to this heading"></a></h3>
+<p>Seleccione “Memory Operation” y pulse &lt;Enter&gt;. Las opciones son:</p>
+<ul class="simple">
+<li><p>Clear all count: borra el número de ejecuciones de todos los archivos de memoria.</p></li>
+<li><p>Delete all file: elimina todos los archivos de la memoria.</p></li>
+<li><p>Format memory: formatea la memoria y elimina todos los archivos almacenados.</p></li>
+<li><p>Total: muestra el número total de ejecuciones de todos los archivos.</p></li>
+</ul>
+<p>El método de operación es el mismo que en las pantallas anteriores. Pulse &lt;Esc&gt; para regresar.</p>
+<figure class="align-center" id="id58">
+<a class="reference internal image-reference" href="../../_images/image54.png"><img alt="Figura 8.8.2. Operaciones de memoria (figura original)." src="../../_images/image54.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.8.2. Operaciones de memoria (figura original).</span><a class="headerlink" href="#id58" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="formateo-de-memoria">
+<h3>8.8.3 Formateo de memoria<a class="headerlink" href="#formateo-de-memoria" title="Link to this heading"></a></h3>
+<p>Seleccione “Format Memory” y pulse &lt;Enter&gt;.</p>
+<ul class="simple">
+<li><p>Format speedily: formateo rápido; elimina todos los archivos de la memoria.</p></li>
+<li><p>Format drastically: formateo completo; elimina todos los archivos de la memoria.</p></li>
+</ul>
+<p>Pulse &lt;Esc&gt; para regresar al menú anterior.</p>
+<figure class="align-center" id="id59">
+<a class="reference internal image-reference" href="../../_images/image55.png"><img alt="Figura 8.8.3. Formateo de memoria (figura original)." src="../../_images/image55.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.8.3. Formateo de memoria (figura original).</span><a class="headerlink" href="#id59" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="archivos-de-memoria-usb">
+<h3>8.8.4 Archivos de memoria USB<a class="headerlink" href="#archivos-de-memoria-usb" title="Link to this heading"></a></h3>
+<p>Al seleccionar “U disk” en la pantalla de archivos, se abre la lista de archivos de la memoria USB. El método de operación es equivalente al de la memoria interna.</p>
+<ul class="simple">
+<li><p>Read Udisk: lee la lista de archivos de la memoria USB.</p></li>
+<li><p>Copy to memory: copia el archivo seleccionado de la memoria USB a la memoria interna.</p></li>
+<li><p>Delete: elimina el archivo seleccionado de la memoria USB.</p></li>
+</ul>
+<figure class="align-center" id="id60">
+<a class="reference internal image-reference" href="../../_images/image56.png"><img alt="Figura 8.8.4. Gestión de memoria USB (figura original)." src="../../_images/image56.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.8.4. Gestión de memoria USB (figura original).</span><a class="headerlink" href="#id60" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>El sistema admite memorias USB formateadas en FAT32 y FAT16. Los archivos deben estar en el directorio raíz. Los nombres de más de 8 caracteres pueden truncarse automáticamente. Los archivos copiados desde la placa a la memoria USB se guardan en el directorio raíz.</p>
+</div>
+</section>
+</section>
+<section id="ingreso-y-configuracion-de-contrasenas">
+<h2>8.9 Ingreso y configuración de contraseñas<a class="headerlink" href="#ingreso-y-configuracion-de-contrasenas" title="Link to this heading"></a></h2>
+<section id="ingreso-de-contrasena">
+<h3>8.9.1 Ingreso de contraseña<a class="headerlink" href="#ingreso-de-contrasena" title="Link to this heading"></a></h3>
+<p>Al acceder a determinadas interfaces u operaciones se solicita una contraseña. Puede introducirla directamente con las teclas numéricas o seleccionar números y letras con las teclas de dirección y confirmar cada carácter con &lt;Enter&gt;. Una vez introducidos los seis caracteres, pulse &lt;Enter&gt;. Si la contraseña es correcta se abrirá la interfaz correspondiente o se ejecutará la operación; de lo contrario aparecerá “password error” y deberá introducirla nuevamente. Pulse &lt;Esc&gt; para volver.</p>
+<figure class="align-center" id="id61">
+<a class="reference internal image-reference" href="../../_images/image57.png"><img alt="Figura 8.9.1. Ingreso de contraseña (figura original)." src="../../_images/image57.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.9.1. Ingreso de contraseña (figura original).</span><a class="headerlink" href="#id61" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configuracion-de-contrasena">
+<h3>8.9.2 Configuración de contraseña<a class="headerlink" href="#configuracion-de-contrasena" title="Link to this heading"></a></h3>
+<p>En la pantalla de configuración puede introducir la contraseña con las teclas numéricas o pulsar &lt;Shift&gt; para utilizar el teclado de caracteres. Seleccione un número o letra con las teclas de dirección y pulse &lt;Enter&gt;. Pulse &lt;Shift&gt; para volver a la selección de contraseña. Si la contraseña se introduce correctamente, la nueva contraseña entra en vigor; en caso contrario se muestra “password error”. Pulse &lt;Esc&gt; para volver.</p>
+<figure class="align-center" id="id62">
+<a class="reference internal image-reference" href="../../_images/image58.png"><img alt="Figura 8.9.2. Configuración de contraseña (figura original)." src="../../_images/image58.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.9.2. Configuración de contraseña (figura original).</span><a class="headerlink" href="#id62" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="mensajes-y-alarmas">
+<h2>8.10 Mensajes y alarmas<a class="headerlink" href="#mensajes-y-alarmas" title="Link to this heading"></a></h2>
+<p>Durante la operación del usuario o del sistema pueden aparecer mensajes y alarmas, por ejemplo: reinicio, fallo de protección de agua, protección por límite físico o cruce del borde de trabajo.</p>
+<ul class="simple">
+<li><p>Mensaje: durante un reinicio el sistema muestra “The system is resetting.” El usuario debe actuar de acuerdo con las indicaciones de la pantalla.</p></li>
+<li><p>Alarma: ante un fallo de protección de agua el sistema muestra una alarma de “water protection fault”. El sistema realiza la operación correspondiente según se pulse &lt;Enter&gt; o &lt;Esc&gt;.</p></li>
+</ul>
+<figure class="align-center" id="id63">
+<a class="reference internal image-reference" href="../../_images/image59.png"><img alt="Figura 8.10-1. Mensaje de reinicio." src="../../_images/image59.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.10-1. Mensaje de reinicio.</span><a class="headerlink" href="#id63" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id64">
+<a class="reference internal image-reference" href="../../_images/image60.png"><img alt="Figura 8.10-2. Alarma de protección de agua." src="../../_images/image60.png" style="width: 88%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figura 8.10-2. Alarma de protección de agua.</span><a class="headerlink" href="#id64" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="explicacion-de-parametros-de-fabricante-y-usuario">
+<h1>9. Explicación de parámetros de fabricante y usuario<a class="headerlink" href="#explicacion-de-parametros-de-fabricante-y-usuario" title="Link to this heading"></a></h1>
+<section id="id3">
+<h2>9.1 Parámetros del fabricante<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="parametros-del-motor">
+<h3>9.1.1 Parámetros del motor<a class="headerlink" href="#parametros-del-motor" title="Link to this heading"></a></h3>
+<p>Los parámetros siguientes se aplican a los ejes X, Y, Z y U:</p>
+<p>Polaridad de dirección: Invertir la polaridad cambia el sentido de movimiento del motor. Debe configurarse de modo que el eje se desplace hacia el origen durante el reinicio. Si se aleja del origen, la polaridad es incorrecta.</p>
+<p>Polaridad de límite: Define si la señal de límite es activa a nivel alto o bajo. Si al llegar al límite la placa recibe nivel bajo, la polaridad debe configurarse como negativa.</p>
+<p>Recorrido (Scope): Distancia máxima que puede recorrer el eje, determinada por la construcción real de la máquina.</p>
+<p>Distancia del origen al límite físico: Si se habilita la protección por límite físico, normalmente debe ajustarse entre 2 y 5 mm. Un valor de 0 puede provocar activaciones erróneas al llegar a la coordenada mínima. Si la protección no está habilitada, puede ajustarse entre 0 y 5 mm.</p>
+<p>Modo de control: Puede seleccionarse doble pulso o dirección + pulso único. Normalmente se utiliza dirección + pulso único.</p>
+<p>Paso del motor: Equivalencia de desplazamiento: distancia absoluta que recorre el eje por cada pulso enviado al motor. Antes de establecerla correctamente puede cortarse un rectángulo grande y calcular automáticamente el valor a partir de la longitud programada y la longitud medida.</p>
+<p>Protección por límite físico: Habilita o deshabilita la protección por límite físico del eje.</p>
+<p>Flanco ascendente PWM válido: Define si el driver considera válido el flanco ascendente o descendente de la señal de pulsos. Deshabilitado = flanco descendente; habilitado = flanco ascendente.</p>
+<p>Habilitar reinicio: Si la máquina dispone de ese eje, debe habilitarse su reinicio; si no existe, debe deshabilitarse.</p>
+<p>Velocidad de arranque: Velocidad del eje al iniciar directamente desde reposo. Un valor demasiado alto puede provocar pérdida de pasos, vibración o ruido; uno demasiado bajo reduce la velocidad global. Los ejes de mayor inercia requieren valores menores. Valor típico: 5 a 30 mm/s.</p>
+<p>Velocidad máxima: Límite máximo de velocidad que puede soportar el eje, relacionado con la fuerza del motor, la inercia y la relación de transmisión. Valor típico: 200 a 500 mm/s.</p>
+<p>Aceleración máxima: Aceleración máxima en aceleración o desaceleración. Un valor excesivo puede causar pérdida de pasos, vibración o ruido; uno demasiado bajo reduce la velocidad general. En ejes de mayor inercia, como Y asociado al puente, el rango típico es 800 a 3000 mm/s²; en ejes de menor inercia, como X asociado al carro, 8000 a 20000 mm/s².</p>
+<p>Aceleración de parada de emergencia: Si el eje utiliza protección por límite físico, al alcanzar el límite se detendrá con esta aceleración. Puede configurarse entre 2 y 3 veces la aceleración máxima del eje.</p>
+</section>
+<section id="parametros-de-las-teclas-de-movimiento">
+<h3>Parámetros de las teclas de movimiento<a class="headerlink" href="#parametros-de-las-teclas-de-movimiento" title="Link to this heading"></a></h3>
+<p>Velocidad inicial por teclado: Velocidad inicial del eje cuando se mueve mediante las teclas del panel. No puede ser superior a la velocidad de arranque.</p>
+<p>Aceleración por teclado: Aceleración utilizada al mover el eje con las teclas. No puede ser superior a la aceleración máxima del eje.</p>
+<p>Polaridad de teclas: Controla la dirección del eje durante el movimiento manual. Si las teclas de dirección provocan un movimiento opuesto al esperado, debe modificarse esta polaridad.</p>
+</section>
+<section id="parametros-del-laser">
+<h3>9.1.2 Parámetros del láser<a class="headerlink" href="#parametros-del-laser" title="Link to this heading"></a></h3>
+<p>Configuración del láser: Permite seleccionar uno o dos láseres, según la cantidad de tubos instalada por el fabricante.</p>
+<p>Tipo de láser: Opciones: tubo de vidrio, láser RF sin pulso de preignición y láser RF con pulso de preignición.</p>
+<p>Coeficiente de atenuación del láser: Permite compensar la pérdida de potencia del láser.</p>
+<p>Habilitar láser: Con dos láseres instalados, cada uno puede habilitarse o deshabilitarse de forma independiente.</p>
+<p>Potencia mínima: Define el límite mínimo de potencia permitido.</p>
+<p>Potencia máxima: Define el límite máximo de potencia permitido.</p>
+<p>Frecuencia PWM del láser: Define la frecuencia de pulsos de la señal de control. Como referencia, un tubo de vidrio suele utilizar aproximadamente 20 kHz y un láser RF aproximadamente 5 kHz.</p>
+<p>Frecuencia de pre-generación: Se utiliza con láseres RF que requieren pre-generación de PWM.</p>
+<p>Escala de pulso de pre-generación: Se configura junto con la frecuencia de pre-generación cuando el láser RF requiere PWM previo.</p>
+<p>Protección de agua habilitada: Si está habilitada, la placa supervisa la entrada de protección de agua. Nivel bajo = normal; nivel alto = cierre forzado del láser, pausa del trabajo y alarma. Si está deshabilitada, la entrada no se supervisa.</p>
+<p>Los valores de potencia máxima y mínima (%) establecen los límites permitidos para el usuario. Durante la operación, el usuario no puede superar la potencia máxima definida aquí ni configurar una potencia inferior al mínimo definido. Cuando la potencia del láser disminuye por envejecimiento, puede utilizarse el coeficiente de atenuación para compensarla.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si la máquina dispone de un solo láser, se mostrará únicamente el conjunto de parámetros correspondiente a un canal.</p>
+</div>
+</section>
+<section id="otros-parametros-del-fabricante">
+<h3>9.1.3 Otros parámetros del fabricante<a class="headerlink" href="#otros-parametros-del-fabricante" title="Link to this heading"></a></h3>
+<p>Configuración de la máquina:</p>
+<p>Tipo de máquina: En la mayoría de los casos debe seleccionarse la máquina de grabado general. Los demás tipos se reservan para aplicaciones específicas.</p>
+<p>Modo de transmisión: Normalmente se selecciona “Belt Stepping Type” (transmisión por correa con motor paso a paso). Al seleccionar otros tipos, el algoritmo de control cambia ligeramente.</p>
+<p>Modo de alimentación: Puede ser unidireccional o bidireccional. En modo unidireccional no es necesario comprobar coordenadas. En modo bidireccional el sistema comprueba coordenadas máxima y mínima: las secuencias impares alimentan en una dirección y las pares en la contraria. La dirección inicial puede cambiarse mediante la polaridad de dirección o el signo de la longitud de alimentación.</p>
+<p>Retardo de reanudación tras corte de energía: Ajustable entre 0 y 3000 ms. Tras un corte de la red, la tensión del sistema no cae instantáneamente a cero. Este valor debe aproximarse al retardo real. Si difiere demasiado, al reanudar un grabado continuo la segunda parte puede quedar separada de la anterior o superponerse excesivamente.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Después de modificar parámetros de fabricante como polaridad de dirección, modo de control, tipo de láser o frecuencia PWM, debe reiniciarse el sistema para que los cambios entren en vigor.</p>
+</div>
+<p>Parámetros de habilitación:</p>
+<p>Protección de puerta abierta: Si está habilitada, la protección de puerta debe estar conectada al controlador; de lo contrario la máquina no funcionará.</p>
+<p>Habilitar soplador: Si el puerto Wind se utiliza para controlar el soplador mediante los parámetros de capa, esta opción debe habilitarse. Si no se habilita, la salida Wind puede utilizarse para otra señal.</p>
+</section>
+</section>
+<section id="id4">
+<h2>9.2 Parámetros de usuario<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="parametros-de-corte">
+<h3>9.2.1 Parámetros de corte<a class="headerlink" href="#parametros-de-corte" title="Link to this heading"></a></h3>
+<p>Velocidad de movimiento en vacío: Define la velocidad máxima de todos los movimientos sin emisión láser.</p>
+<p>Aceleración de movimiento en vacío: Aceleración máxima de los movimientos sin emisión. Puede aumentarse junto con la velocidad para reducir el tiempo total de trabajo, pero valores excesivos pueden provocar vibraciones en la trayectoria.</p>
+<p>Retardo de movimiento en vacío: Si el valor es cero, no hay retardo después del desplazamiento en vacío. Con un valor distinto de cero se introduce un retardo y la velocidad disminuye hasta la velocidad de detención.</p>
+<p>Velocidad de giro: Velocidad en las esquinas de ángulo agudo; también constituye la velocidad máxima del proceso de corte en dichas condiciones.</p>
+<p>Aceleración de giro: Aceleración en las esquinas agudas durante el corte. Valores demasiado altos pueden causar vibración; demasiado bajos reducen la velocidad de corte. Es el valor mínimo de aceleración utilizado dentro de la geometría.</p>
+<p>Aceleración de corte: Valor máximo de aceleración utilizado durante el proceso de corte.</p>
+<p>Factor de aceleración (Acc Factor): Indica la rapidez con la que cambia la aceleración de corte.</p>
+<p>Factor de aceleración G0: Indica la rapidez con la que cambia la aceleración durante movimientos en vacío.</p>
+<p>Factor de velocidad: Determina la velocidad de corte en arcos con diferentes curvaturas.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>“Key Setting” es un botón, no un parámetro. Se utiliza para cargar valores de corte recomendados basados en experiencia.</p>
+</div>
+</section>
+<section id="parametros-de-escaneo">
+<h3>9.2.2 Parámetros de escaneo<a class="headerlink" href="#parametros-de-escaneo" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Velocidad inicial del eje X</p></li>
+<li><p>Velocidad inicial del eje Y</p></li>
+<li><p>Aceleración del eje X</p></li>
+<li><p>Aceleración del eje Y</p></li>
+</ul>
+<p>Estos cuatro parámetros determinan la velocidad inicial y la aceleración de los dos ejes durante el escaneo. Cuanto mayores sean, más rápido será el proceso, dentro de los límites mecánicos del sistema.</p>
+<p>Velocidad de avance de línea en escaneo: controla la velocidad máxima con la que se pasa verticalmente de una línea a la siguiente. Si el espaciado entre líneas o bloques es grande y se requiere alta precisión de posicionamiento, conviene usar un valor menor.</p>
+<p>Modo de escaneo: puede ser General o Especial. En modo Especial debe aumentarse la potencia láser. Cuanto menor sea el porcentaje de punto (speckle), mayor será la reducción de potencia efectiva y, por tanto, mayor deberá ser la potencia configurada para lograr la misma profundidad. El modo Especial busca aplicar alta potencia durante tiempos cortos para conseguir un fondo más plano en grabados profundos. Una configuración inadecuada puede no producir el efecto deseado y el uso de alta potencia, aunque sea por intervalos breves, puede afectar la vida útil del láser. El modo predeterminado es General.</p>
+<p>Tamaño de punto (Speckle Size): en modo General no tiene efecto. En modo Especial se activa y el controlador permite valores entre 50 % y 99 %.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Los parámetros de corte y escaneo no pueden superar los límites establecidos en los parámetros de los ejes. Si se intenta hacerlo, el sistema sustituirá automáticamente los valores por los límites del eje.</p>
+</div>
+</section>
+<section id="parametros-de-alimentacion">
+<h3>9.2.3 Parámetros de alimentación<a class="headerlink" href="#parametros-de-alimentacion" title="Link to this heading"></a></h3>
+<p>Retardo antes de alimentar: Ajustable entre 0 y 300 s. Facilita las tareas de carga y retirada de material en el dispositivo de alimentación.</p>
+<p>Retardo después de alimentar: Ajustable entre 0 y 9,9 s. Permite esperar a que desaparezcan las vibraciones después de alcanzar la posición correcta antes de iniciar el siguiente trabajo.</p>
+<p>Alimentación progresiva: Si se habilita, el patrón de matriz virtual en dirección Y se ejecuta en la misma posición; después de procesar una línea, el eje U avanza una vez. La distancia de avance de U corresponde al intervalo entre dos líneas en Y.</p>
+<p>Compensación de alimentación progresiva: Permite compensar el error de movimiento del eje U ajustando el intervalo entre las líneas del gráfico en dirección Y.</p>
+</section>
+<section id="parametros-de-reinicio">
+<h3>9.2.4 Parámetros de reinicio<a class="headerlink" href="#parametros-de-reinicio" title="Link to this heading"></a></h3>
+<p>Velocidad de reinicio: velocidad utilizada durante el retorno coordinado de los ejes X/Y al origen.</p>
+<ul class="simple">
+<li><p>Reinicio del eje X al arrancar (Auto home)</p></li>
+<li><p>Reinicio del eje Y al arrancar (Auto home)</p></li>
+<li><p>Reinicio del eje Z al arrancar (Auto home)</p></li>
+<li><p>Reinicio del eje U al arrancar (Auto home)</p></li>
+</ul>
+<p>En los cuatro parámetros anteriores se puede seleccionar “Sí” o “No” para definir si cada eje realiza el retorno al origen durante el arranque.</p>
+</section>
+<section id="parametros-de-recorrido-de-contorno-go-scale">
+<h3>9.2.5 Parámetros de recorrido de contorno (Go Scale)<a class="headerlink" href="#parametros-de-recorrido-de-contorno-go-scale" title="Link to this heading"></a></h3>
+<p>Modo Go Scale: “Blanked Bordering” realiza una vista previa del contorno sin emitir láser; “Outputted Border Cutting” permite cortar manualmente el contorno del gráfico procesado; “4-corner Dotting” emite el láser brevemente en las cuatro esquinas del marco para marcar puntos. Esto permite comprobar de forma intuitiva el tamaño y la posición. La velocidad del contorno es la configurada mediante el teclado con el sistema en reposo. Para salida de luz, las potencias mínima y máxima son las configuradas en el teclado; en el modo de cuatro puntos se utiliza la potencia máxima configurada.</p>
+<p>Margen Go Scale: define si el contorno de previsualización/corte se amplía una determinada distancia por fuera del marco real del gráfico.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si el contorno excede los límites de la máquina, la interfaz mostrará un aviso. Al pulsar &lt;Enter&gt;, el sistema puede recorrer primero el borde de las coordenadas máximas/mínimas y después el contorno del gráfico. Es posible cancelar este recorrido.</p>
+</div>
+</section>
+<section id="otros-parametros-de-usuario">
+<h3>9.2.6 Otros parámetros de usuario<a class="headerlink" href="#otros-parametros-de-usuario" title="Link to this heading"></a></h3>
+<p>Modo de matriz: Puede ser bidireccional o unidireccional. En modo bidireccional los elementos se procesan de ida y vuelta; en modo unidireccional se procesan siempre en la misma dirección. El modo unidireccional ofrece un comportamiento uniforme entre elementos, pero requiere algo más de tiempo. El modo predeterminado es bidireccional.</p>
+<p>Posición de retorno: Puede seleccionarse el origen relativo o el origen absoluto de máquina. Este parámetro determina dónde se estaciona el cabezal láser al finalizar cada trabajo.</p>
+<p>Ajuste de enfoque: Distancia desde el punto focal de la lente del cabezal hasta el origen del eje Z. Si no existe función de autoenfoque, el parámetro no tiene efecto.</p>
+<p>Holgura X: Compensación de holgura del eje X, con precisión de 1 µm.</p>
+<p>Holgura Y: Compensación de holgura del eje Y, con precisión de 1 µm.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="../tema_1/0_puesta_en_marcha.html" class="btn btn-neutral float-left" title="Instalación del equipo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../tema_3/0_seguridad_uso.html" class="btn btn-neutral float-right" title="Seguridad y recomendaciones de uso" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2026, AvigTech.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
